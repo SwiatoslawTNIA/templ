@@ -18,10 +18,11 @@ vpath %.h headers
 %.o: %.c++
 	$(COMPILE.C) $(OUTPUT_OPTION) $<
 
-run: c++
-	./c++
+run: class
+	./class
 
-c++: c++.o
+class: class.o
+class.o: class.cc
 c++.o: c++.cc c++.h
 
 .INTERMEDIATE: *.o
