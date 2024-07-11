@@ -18,9 +18,12 @@ vpath %.h headers
 %.o: %.c++
 	$(COMPILE.C) $(OUTPUT_OPTION) $<
 
-run: class
-	./class
-
+run: Chap5
+	./Chap5
+Chap5: Chap5.o
+Chap5.o: Chap5.cc
+Variad: Variad.o 
+Variad.o: Variad.cc
 class: class.o
 class.o: class.cc
 c++.o: c++.cc c++.h
