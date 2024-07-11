@@ -1,7 +1,7 @@
 COMPILE.C=$(COMPILE.cc)
 COMPILE.cc=$(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
 CXXFLAGS=-g3 -I headers 
-CPPFLAGS= -Wall -Wextra -Wpedantic 
+CPPFLAGS= -std=c++17 -Wall -Wextra -Wpedantic 
 CXX= g++
 OUTPUT_OPTION = -o $@
 #Linking:

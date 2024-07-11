@@ -113,6 +113,12 @@ int main(void)
   Stack<int, 20> stack1;//stack of up to 20 ints
   Stack<int, 40> stack2;//stack of up to 40 ints;
   Stack<std::string, 40> strings;
-  
+  //manipulating the stack:
+  stack1.push(17);
+  std::cout << stack1.top() << "\n";
+  stack1.pop();//remove the first element in the stack
+  strings.push("What a wonderful world");
+  std::cout << strings.top() << std::endl;
+  strings.pop();//pop th e
   return 0;
 }
